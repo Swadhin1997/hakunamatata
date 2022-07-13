@@ -29,7 +29,7 @@ pipeline {
             }   
             
             }
- stage('Quality Analysis') {
+  stage('Quality Analysis') {
             parallel {
                 // run Sonar Scan and Integration tests in parallel. 
                 stage('Integration Test') {
@@ -50,5 +50,3 @@ pipeline {
 }
     }
 } 
-
-
