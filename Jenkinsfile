@@ -1,9 +1,5 @@
 pipeline {
-   // environment {
-    //  PATH = "/opt/maven/bin/:$PATH"
-   //   PATH = "/opt/gradle/gradle-7.4.2/bin/:$PATH"
-    //  JAVA_TOOL_OPTIONS = "-Duser.home=/opt/maven"
-   // }
+
 agent any 
      options {
         timestamps()
@@ -56,4 +52,3 @@ agent any
 }
     }
 }
-
