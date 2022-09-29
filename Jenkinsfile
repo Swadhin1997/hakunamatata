@@ -13,7 +13,7 @@ agent any
 
         stage ("Clone Repository") {
                 steps {
-                   git branch: 'main', url: 'https://github.com/Swadhin1997/ct.git'
+                   git branch: 'master', url: 'https://github.com/Swadhin1997/hakunamatata.git'
                 }
             }  
         stage('Prep') {
@@ -27,7 +27,7 @@ agent any
         }  
         stage ('Building dll') {
             steps {
-               sh "dotnet build PrjPASS.sln"
+               sh "dotnet build hakunamatata.sln"
             }           
         }
     }
